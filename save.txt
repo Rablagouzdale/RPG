@@ -1,7 +1,7 @@
-nom=titi
-classe=Mage
+nom=azrazer
+classe=Viking Métalleux
 attaque=7
-defense=-1
-vie=11
+defense=4
+vie=22
 xp=2
 lvl=1

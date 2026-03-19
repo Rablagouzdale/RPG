@@ -163,3 +163,7 @@ Ce projet met en pratique :
 
 
 ---
+
+## Fonctionnalité Bonus :
+
+- Ajout d'une nouvelle classe 

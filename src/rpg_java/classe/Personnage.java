@@ -1,6 +1,6 @@
 package rpg_java.classe;
 
-public class Personnage  {
+public class Personnage {
 
     private String nom;
     private String classe;
@@ -97,17 +97,25 @@ public class Personnage  {
 
     public Attaque[] getAttaques() {
         if (classe.equals("Guerrier")) {
-            return new Attaque[] {
+            return new Attaque[]{
                     new Attaque("Coup d'épée", 1, 1, 1.1),
                     new Attaque("Arc", 2, 3, 1.0)
             };
-        } else {
-            return new Attaque[] {
+        } else if (classe.equals("Mage")) {
+            return new Attaque[]{
                     new Attaque("Projectile magique", 1, 2, 1.3),
                     new Attaque("Boule de feu", 2, 5, 1.1)
             };
+        } else if (classe.equals("Viking Métalleux")) {
+            return new Attaque[]{
+                    new Attaque("Skål !", 0, 10, 1.2),
+                    new Attaque("Raise Your Horn !", 0, 8, 8.4),
+            };
+        } else {
+            return new Attaque[0];
         }
     }
 
+    ;
 }
 

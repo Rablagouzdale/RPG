@@ -4,6 +4,7 @@ import rpg_java.classe.Guerrier;
 import rpg_java.classe.Mage;
 import rpg_java.classe.Monstre;
 import rpg_java.classe.Personnage;
+import rpg_java.classe.Ragnar;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -25,17 +26,30 @@ public class Jeu {
         System.out.println("Choisissez une classe :");
         System.out.println("1) Guerrier");
         System.out.println("2) Mage");
-
+        System.out.println("3) Ragnar");
         String choix = scanner.nextLine();
 
         Personnage joueur;
 
-        if (choix.equals("1")) {
-            joueur = new Guerrier(nom);
-            System.out.println("Vous avez choisi Guerrier !");
-        } else {
-            joueur = new Mage(nom);
-            System.out.println("Vous avez choisi Mage !");
+        switch (choix) {
+            case "1":
+                joueur = new Guerrier(nom);
+                System.out.println("Vous avez choisi Guerrier !");
+                break;
+
+            case "2":
+                joueur = new Mage(nom);
+                System.out.println("Vous avez choisi Mage !");
+                break;
+
+            case "3":
+                joueur = new Ragnar(nom);
+                System.out.println("Vous avez choisi Ragnar (Viking Métalleux) !");
+                break;
+
+            default:
+                System.out.println("Choix invalide !");
+                return null;
         }
 
         // J'affiche les caractéristiques des personnages
