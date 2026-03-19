@@ -1,0 +1,7 @@
+nom=titi
+classe=Mage
+attaque=7
+defense=-1
+vie=11
+xp=2
+lvl=1

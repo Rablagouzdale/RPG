@@ -1,0 +1,7 @@
+nom=titi
+classe=Guerrier
+attaque=5
+defense=3
+vie=20
+xp=2
+lvl=1
